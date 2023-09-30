@@ -1,0 +1,92 @@
+/* CartPage.css */
+
+.centered-heading {
+  display: flex;
+  justify-content: center;
+}
+
+.cart-page {
+  max-width: 1200px; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px; /* Add padding to the container for spacing */
+}
+
+.cart-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns per row */
+  gap: 20px; /* Adjust the gap between items as needed */
+}
+
+.cart-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  position: relative; /* Add position relative to create stacking context */
+}
+
+.cart-item img {
+  max-width: 100%; /* Ensure the image fits within its container */
+}
+
+.cart-item h3 {
+  margin: 10px;
+}
+
+.cart-item p {
+  font-weight: bold;
+}
+
+.cart-item button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cart-item button:hover {
+  background-color: #333; /* Darken the background on hover */
+}
+
+/* Add this CSS to position the checkout container on the right side */
+
+.checkout {
+  background-color: #000000;
+  padding: 20px;
+  width: 300px; /* Adjust the width as needed */
+  position: fixed; /* Fixed position to stay on the right side */
+  top: 50%; /* Center vertically */
+  right: 20px; /* 20px from the right edge */
+  transform: translateY(-50%); /* Center vertically */
+  text-align: center; /* Center the contents */
+}
+
+.checkout ul {
+  color: white;
+  list-style: none;
+  padding: 0;
+}
+
+.checkout ul p {
+  margin: 0;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.checkout button {
+  background-color: #ffffff; /* Blue button color */
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.checkout button:hover {
+  background-color: #d4d4d4; /* Darker blue on hover */
+}

@@ -1,0 +1,30 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+header {
+  background-color: black;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: white;
+}
+
+/* Logo styles */
+.logo {
+  font-size: 24px;
+  font-weight: 200;
+}
+
+/* Link styles */
+header a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.right-links {
+  margin-left: auto; /* Auto margin pushes links to the right */
+}
